@@ -141,7 +141,3 @@ Email_Spam_Classifier/
 ```bash
 MIT License. Free to use and modify.
 ```
-
-```
-
-```
