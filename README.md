@@ -28,11 +28,14 @@ pip install -r requirements.txt
 ```
 
 requirements.txt:
+
+```bash
 numpy
 pandas
 scikit-learn
 tqdm
 sentence-transformers
+```
 
 ## SMS Spam Collection v.1
 
@@ -65,15 +68,10 @@ There is one collection:
 
 The files contain one message per line. Each line is composed by two columns: one with label (ham or spam) and other with the raw text. Here are some examples:
 
-ham What you doing?how are you?
-ham Ok lar... Joking wif u oni...
-ham dun say so early hor... U c already then say...
-ham MY NO. IN LUTON 0125698789 RING ME IF UR AROUND! H\*
-ham Siva is in hostel aha:-.
-ham Cos i was out shopping wif darren jus now n i called him 2 ask wat present he wan lor. Then he started guessing who i was wif n he finally guessed darren lor.
-spam FreeMsg: Txt: CALL to No: 86888 & claim your reward of 3 hours talk time to use from your phone now! ubscribe6GBP/ mnth inc 3hrs 16 stop?txtStop
-spam Sunshine Quiz! Win a super Sony DVD recorder if you canname the capital of Australia? Text MQUIZ to 82277. B
-spam URGENT! Your Mobile No 07808726822 was awarded a L2,000 Bonus Caller Prize on 02/09/03! This is our 2nd attempt to contact YOU! Call 0871-872-9758 BOX95QU
+ham What you doing? how are you?
+ham Ok lar... Joking with u only...
+spam FreeMsg: Txt: CALL to No: 86888 & claim your reward!
+spam URGENT! Your Mobile No 07808726822 was awarded a £2000 Bonus Prize!
 
 Note: messages are not chronologically sorted.
 
@@ -88,39 +86,61 @@ The script automatically downloads the UCI SMS Spam Collection dataset.
 ▶️ Usage
 
 Run the script directly:
-python spam_classifier.py
 
-This will: 1. Download and preprocess the dataset 2. Generate embeddings with Sentence Transformers 3. Train a Naive Bayes classifier 4. Print performance metrics 5. Run example predictions
+```bash
+python spam_classifier.py
+```
+
+This will:
+
+1. Download and preprocess the dataset
+2. Generate embeddings with Sentence Transformers
+3. Train a Naive Bayes classifier
+4. Print performance metrics
+5. Run example predictions
 
 📊 Example Output
 Model Performance Metrics:
+
+```bash
 Accuracy: 0.9746
 Precision: 0.9565
 Recall: 0.9403
 F1 Score: 0.9483
+```
 
 Confusion Matrix:
+
+```bash
 [[965   5]
  [ 12 142]]
+```
 
 Example Predictions:
 
+```bash
 Text: URGENT! You have won a free vacation. Click here to claim now!
 Prediction: spam (confidence: 0.9812)
 
 Text: Hi Mom, what time should I come over for dinner tonight?
 Prediction: ham (confidence: 0.9976)
+```
 
 📦 Project Structure:
+
+```bash
 Email_Spam_Classifier/
 │── spam_classifier.py # Main script with EmailSpamClassifier class
 │── README.md # Documentation
 │── requirements.txt # Dependencies
 │── SMSSpamCollection # Dataset (auto-downloaded)
+```
 
 📜 License
 
+```bash
 MIT License. Free to use and modify.
+```
 
 ```
 
