@@ -1,7 +1,5 @@
 """
 Email Spam Classifier using Sentence Transformers and Naive Bayes
-Author: GitHub Copilot
-Date: September 15, 2025
 """
 
 import os
