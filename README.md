@@ -1,26 +1,29 @@
-📧 Email Spam Classifier using Sentence Transformers + Naive Bayes
+# 📧 Email Spam Classifier using Sentence Transformers + Naive Bayes
 
-This project implements an email spam classifier that combines the semantic power of LLM embeddings (via Sentence Transformers) with the simplicity and speed of a Naive Bayes classifier.
+This project implements an email spam classifier that combines the semantic power of **LLM embeddings** (via Sentence Transformers) with the simplicity and speed of a **Naive Bayes classifier**.
 
 Instead of relying on just raw word counts (Bag of Words / TF-IDF), the classifier uses semantic embeddings from a pretrained transformer model to capture meaning, tone, and context in email text — making it more robust against spam tricks.
 
-⸻
+---
 
-🚀 Features
-• Uses all-MiniLM-L6-v2 (Sentence Transformers) for text embeddings
-• Lightweight Naive Bayes classifier for classification
-• Supports spam / ham prediction with confidence score
-• Evaluates performance with accuracy, precision, recall, F1, and confusion matrix
-• Example predictions included
-• Modular, class-based design (EmailSpamClassifier)
+## 🚀 Features
 
-⸻
+- Uses **all-MiniLM-L6-v2 (Sentence Transformers)** for text embeddings
+- Lightweight **Naive Bayes classifier** for classification
+- Supports **spam / ham prediction** with confidence score
+- Evaluates performance with accuracy, precision, recall, F1, and confusion matrix
+- Example predictions included
+- Modular, class-based design (`EmailSpamClassifier`)
 
-🛠️ Installation
+---
+
+## 🛠️ Installation
 
 Clone the repository and install dependencies:
+
+```bash
 git clone https://github.com/advait-30/Email_Spam_Classifier.git
-cd email-spam-classifier
+cd Email_Spam_Classifier
 pip install -r requirements.txt
 
 requirements.txt:
@@ -92,8 +95,8 @@ This will: 1. Download and preprocess the dataset 2. Generate embeddings with Se
 Model Performance Metrics:
 Accuracy: 0.9746
 Precision: 0.9565
-Recall: 0.9403
-F1 Score: 0.9483
+Recall:    0.9403
+F1 Score:  0.9483
 
 Confusion Matrix:
 [[965   5]
@@ -108,12 +111,13 @@ Text: Hi Mom, what time should I come over for dinner tonight?
 Prediction: ham (confidence: 0.9976)
 
 📦 Project Structure:
-email-spam-classifier/
-│── spam_classifier.py # Main script with EmailSpamClassifier class
-│── README.md # Documentation
-│── requirements.txt # Dependencies
-|-- SMSSpamCollection. # Dataset
+Email_Spam_Classifier/
+│── spam_classifier.py   # Main script with EmailSpamClassifier class
+│── README.md            # Documentation
+│── requirements.txt     # Dependencies
+│── SMSSpamCollection    # Dataset (auto-downloaded)
 
 📜 License
 
 MIT License. Free to use and modify.
+```
