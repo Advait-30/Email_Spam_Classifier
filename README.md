@@ -25,6 +25,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/advait-30/Email_Spam_Classifier.git
 cd Email_Spam_Classifier
 pip install -r requirements.txt
+```
 
 requirements.txt:
 numpy
@@ -95,8 +96,8 @@ This will: 1. Download and preprocess the dataset 2. Generate embeddings with Se
 Model Performance Metrics:
 Accuracy: 0.9746
 Precision: 0.9565
-Recall:    0.9403
-F1 Score:  0.9483
+Recall: 0.9403
+F1 Score: 0.9483
 
 Confusion Matrix:
 [[965   5]
@@ -112,12 +113,15 @@ Prediction: ham (confidence: 0.9976)
 
 📦 Project Structure:
 Email_Spam_Classifier/
-│── spam_classifier.py   # Main script with EmailSpamClassifier class
-│── README.md            # Documentation
-│── requirements.txt     # Dependencies
-│── SMSSpamCollection    # Dataset (auto-downloaded)
+│── spam_classifier.py # Main script with EmailSpamClassifier class
+│── README.md # Documentation
+│── requirements.txt # Dependencies
+│── SMSSpamCollection # Dataset (auto-downloaded)
 
 📜 License
 
 MIT License. Free to use and modify.
+
+```
+
 ```
